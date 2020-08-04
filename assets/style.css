@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: url('font/Poppins-Regular.ttf');
+}
+
+body{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background-color: #0099ff;
+}
+
+nav{
+    width: 50%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    color: white;
+}
+
+.nav-link{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-link li a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.logo{
+    margin:0;
+}
+
+.hero{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60vh;
+    background-color: #0099ff;
+    border: 2px solid #0099ff;
+}
+
+.hero-text{
+    color: white;
+    font-weight: 550;
+    font-size: large;
+}
+
+
+.home-math-man{
+    height: 300px;
+}
+
+.subscribe{
+    margin: 20px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subscribe button{
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #575A89;
+    color: white;
+    background-color: #575A89;
+    width: 50%;
+    cursor: default;
+    transition: all 0.5s ease-out;
+}
+
+.subscribe button:hover{
+    border: 1px solid #575A89;
+    color: white;
+    background-color: #0099ff;
+    width: 50%;
+}
+
+.hero-image{
+    flex: 3;
+}
+
+.center-text{
+    flex: 5;
+}
+
+.center-text h2{
+    color: white;
+}
+
+#content{
+    margin: 0px 30px;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+.about-title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-content{
+    flex: 3;
+}
+
+.aside-content{
+    flex: 1;
+}
+
+.aside-card{
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-card img{
+    border-radius: 25px;
+    width: 100px;
+}
+
+.aside-card table{
+    width: 100%;
+    font-size: small;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px 10px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    cursor: default;
+}
+
+.about-card{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-image{
+    flex: 1;
+    width: 100px;
+    border-radius: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+}
+
+.about-text{
+    flex: 5;
+    text-align: justify;
+}
+
+.teachers-title{
+    text-align: center;
+}
+
+.teachers{
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.image-column{
+    text-align: center;
+}
+
+.image-column img{
+    width: 150px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);   
+}
+
+.corporation-title{
+    text-align: center;
+    margin: 10px 20px;
+}
+
+.corporations{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.corporation-image-column{
+    text-align: center;
+}
+
+.corporation-image-column img{
+    width: 150px;  
+}
+
+.corporation-name{
+    text-align: center;
+}
+
+.subscription-title{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subscription{
+    width: 75%;
+    height: 300px;
+    cursor: default;
+}
+
+.subscription-packet{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    transition: all 0.4s ease-out;
+}
+
+.subscription-packet:hover{
+    transform: translateY(-20%)
+}
+
+.subscription-packet button{
+    margin-top: 10px;
+    border: 1px solid #0099ff;
+    background-color: #0099ff;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    transition: all 0.3s ease-in;
+    font-weight: 600;
+}
+
+.subscription-packet button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+}
+
+.testimony-title{
+    margin: 30px 20px 10px 20px;
+    text-align: center;
+}
+
+.testimony-card{
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
+.testimony-card img{
+    width: 60px;
+    border-radius: 25px;
+}
+
+.testimony-card p{
+    font-size: 14px;
+}
+
+
+footer{
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #0099ff;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+/*Animasi SVG */
+@keyframes pi{
+    0%{
+        transform: translate(-50%,-50%) rotateZ(-15deg);
+    }
+    50%{
+        transform: translate(-50%, 30%) rotateZ(5deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotateZ(-15deg);
+    }
+}
+
+@keyframes shape{
+    0%{
+        transform: translate(-50%,30%) rotateZ(0deg);
+    }
+    50%{
+        transform: translate(-50%, 50%) rotateZ(180deg);
+    }
+    100%{
+        transform: translate(-50%, 30%) rotateZ(360deg);
+    }
+}
+
+@keyframes circle-shape{
+    0%{
+        transform: translate(-50%,-50%) rotateZ(0deg);
+    }
+    50%{
+        transform: translate(20%, 150%) rotateZ(180deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotateZ(360deg);
+    }
+}
+
+@keyframes man{
+    0%{
+        transform: translate(5%, 1%);
+    }
+    50%{
+        transform: translate(0%, -5%);
+    }
+    100%{
+        transform: translate(5%, 1%);
+    }
+}
+#math-man{
+    animation: man 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#triangle-animation, #square-animation{
+    animation: shape 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#circle-animation{
+    animation: circle-shape 5s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box ;
+}
+
+#pi-animation{
+    animation: pi 4s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+
+
+@media screen and (max-width: 850px){
+    .home-math-man{
+        height: 225px;
+    }
+
+    .about-card{
+        flex-direction: column;
+    }
+
+    .about-text{
+        flex: 1;
+    }
+
+    .about-image{
+        flex: 3;
+    }
+}
+
+
+@media screen and (max-width: 770px){
+
+    .subscription{
+        width:  100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .subscription-packet:hover{
+        transform: translateY(-10%)
+    }
+
+
+    .corporations{
+        flex-direction: column;
+        width: 70%;
+        align-self: center;
+    }
+
+    .teachers{
+        align-self: center;
+        width: 60%;
+        flex-direction: column;
+    }
+
+    .aside-card table{
+        width: 50%;
+        font-size: small;
+    }
+
+    
+    #content{
+        flex-direction: column;
+    }
+
+    .line{
+        width: 30px;
+        height: 4px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .hamburger{
+        background-color: #0099ff;
+        position: fixed;
+        top: 2%;
+        right: 2%;
+        cursor: pointer;
+        z-index: 10;
+        transition: 3.5s ease-in;
+    }
+
+    .hero-image{
+        flex: 2;
+    }
+
+    .center-text{
+        flex: 3;
+    }
+
+    .home-math-man{
+        height: 200px;
+    }
+
+
+    .subscribe button{
+        margin: 5px;
+    }
+
+
+    nav{
+        justify-content: flex-start;
+    }
+
+
+    .logo{
+        margin: 0px 10px;
+    }
+
+    .nav-link{
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        background-color: #0099ff;
+        width: 100%;
+        height: 100%;
+        clip-path: circle(80px at 100% 0%);
+        -webkit-clip-path: circle(80px at 100% 0%);
+        transition: all 1.2s ease-out;
+        pointer-events: none;
+        z-index: 9;
+    }
+
+    .nav-link.onClick{
+        clip-path: circle(1500px at 100% -10%);
+        -webkit-clip-path: circle(1500px at 100% -10%);
+        pointer-events: all;
+    }
+    .nav-link li{
+        opacity: 0;
+    }
+
+    .nav-link li a{
+        font-size: 1.5rem;
+    }
+
+    .nav-link li:nth-child(1){
+        transition: all 0.4s ease-in 0.2s;
+    }
+    .nav-link li:nth-child(2){
+        transition: all 0.4s ease-in 0.4s;
+    }
+    .nav-link li:nth-child(3){
+        transition: all 0.4s ease-in 0.6s;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (max-width: 582px){
+
+    
+    .hero-image{
+        flex: 1;
+    }
+
+    .center-text{
+        flex: 1;
+    }
+
+    .hero{
+        flex-direction: column;
+        justify-content: space-evenly
+    }
+
+    .subscribe{
+        margin: 10px 0px;
+    }
+
+    .subscribe button{
+        width: 70%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .subscribe:last-child{
+        margin-bottom: 30px;
+    }
+
+    .home-math-man{
+        height: 180px;
+    }
+
+    footer{
+        padding: 20px;
+    }
+}
